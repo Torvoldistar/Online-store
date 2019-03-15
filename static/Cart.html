@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Интернет-магазин Вперёд толчками!</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <style>
+      /* Remove the navbar's default rounded borders and increase the bottom margin */ 
+      .navbar {
+        margin-bottom: 50px;
+        border-radius: 0;
+      }
+      
+      /* Remove the jumbotron's default bottom margin */ 
+       .jumbotron {
+        margin-bottom: 0;
+      }
+     
+      /* Add a gray background color and some padding to the footer */
+      footer {
+        background-color: #f2f2f2;
+        padding: 25px;
+      }
+
+    </style>
+  </head>
+  <body>
+  
+  <div class="jumbotron">
+    <div class="container text-center">
+      <h1>Онлайн-магазин : Вперёд толчками!</h1>  
+      <p>Хороший толчок - залог движения вперёд!</p>    
+    </div>
+  </div>
+  
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header"> 
+          <img src="./image/Logo.png" width="50" height="50" >
+      </div>
+  
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+                <li><a href="./Home.html">Главная</a></li>
+                <li><a href="./Contacts.html">Контакты</a></li>
+                <li><a href="./SignIn.html">Вход</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+                <li><a href="./Cart.html"><span class="glyphicon glyphicon-shopping-cart">Корзина</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<div class="container">    
+  <div class="row">
+    <div class="col-sm-12">
+      <div class="panel panel-primary">
+        <div class="panel-body">
+                <ol style="color:black"> 
+                        <li> 
+                        <div class="panel panel-success"> 
+                        <input type="checkbox" checked>Чёрный друг 
+                        <img src="./image/UnitBlack" width="150">
+                        <span>6 800 руб.</span>
+                        <span style="position:relative; left:31%;">Кол-во:<input type="text" value="1" style="width:2%"/></span>
+                        <input type="button" value="Удалить" style="position:relative; left:56%;"/>
+                        </div> 
+                        </li><br> 
+                        <li> 
+                        <div class="panel panel-success" > 
+                                <input type="checkbox" checked>Жёлтый друг
+                                <img src="./image/UnitYel.jpg" width="150" height="100">
+                                <span>14 330 руб.</span>
+                                <span style="position:relative; left:30%;">Кол-во:<input type="text" value="1" style="width:2%"/></span>
+                                <input type="button" value="Удалить" style="position:relative; left:55%;"/>
+                                </div> 
+                        </li><br> 
+                </ol>
+    </div>
+</div>
+</div>
+</div>
+<input type="button" value="Оформить заказ"/>
+<input type="button" value="Очистить Корзину"/>
+</body>
+</html>
